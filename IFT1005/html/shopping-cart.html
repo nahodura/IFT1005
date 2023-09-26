@@ -3,19 +3,101 @@
 <head>
   <meta charset="UTF-8">
   <title>OnlineShop - Panier</title>
-  <link rel="stylesheet" href="/IFT1005/css/navBar.css">
+  <link rel="stylesheet" href="/IFT1005/css/style.css">
 </head>
 <body>
+
+<style>
+p, h2 {
+  font-family: Arial, Helvetica, sans-serif
+}
+
+.panier {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #000000;
+}
+
+</style>
+
 <!-- TODO -->
 <h1>
   <img src="/IFT1005/assets/img/logo.svg" alt="Logo de OnlineShop" style="float:left;width:150px;height:50px;">
-
-  <div class="navBar">
-    <a class="active" href="index.html">Accueil</a>
+  Panier </h1>
+  
+  <nav>
+    <a href="index.html">Accueil</a>
     <a href="contact.html">Contact</a>
     <a href="products.html">Produits</a>
-    <a href="shopping-cart.html">Panier</a>
-  </div>
+    <a class="active" href="shopping-cart.html">Panier</a>
+  </nav>
+
+  <main>
+    <h2>Votre panier d'achats</h2>
+
+    <table class="panier">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Produit</th>
+                <th>Prix Unitaire</th>
+                <th>Quantité</th>
+                <th>Prix Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr> 
+                <td><button class="removeItem">X</button></td>
+                <td><a href="product.html">Apple TV 4K (32GB)</a></td>
+                <td>179,00$</td>
+                <td>
+                    <button class="quantity">-</button> <!-- To add JS function -->
+                    <span class="productQuantity">1</span>
+                    <button class="quantity">+</button> <!-- To add JS function -->
+                </td>
+                <td>179,00$</td>
+            </tr>
+            <tr>
+              <td><button class="removeItem">X</button></td>
+              <td><a href="product.html">Apple TV 4K (32GB)</a></td>
+              <td>179,00$</td>
+              <td>
+                  <button class="quantity">-</button> <!-- To add JS function -->
+                  <span class="productQuantity">1</span>
+                  <button class="quantity">+</button> <!-- To add JS function -->
+              </td>
+              <td>179,00$</td>
+          </tr>
+              <tr>
+                <td><button class="removeItem">X</button></td>
+                <td><a href="product.html">Apple TV 4K (32GB)</a></td>
+                <td>179,00$</td>
+                <td>
+                    <button class="quantity">-</button> <!-- To add JS function -->
+                    <span class="productQuantity">1</span>
+                    <button class="quantity">+</button> <!-- To add JS function -->
+                </td>
+                <td>179,00$</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>Total : 537,00$</p>
+
+    <button class="viderPanier">Vider le Panier</button>
+    <a href="order.html" class="checkout">Commander</a>
+</main>
+
+<footer>
+    <!-- Incluez le pied de page de votre site web ici -->
+</footer>
+
 
 </body>
 </html>

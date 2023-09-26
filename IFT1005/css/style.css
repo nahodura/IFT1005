@@ -1,0 +1,18 @@
+
+nav {
+    background-color: #333; /* Background color for the navigation bar */
+    text-align: center; /* Center-align the links horizontally */
+}
+
+/* Style the navigation links */
+nav a {
+    text-decoration: none; /* Remove underline from links */
+    color: #fff; /* Text color for links */
+    padding: 10px 20px; /* Add some padding to the links for spacing */
+}
+
+/* Style the active link */
+nav a.active {
+    background-color: #31d2fb; /* Background color for the active link */
+    color: #fff; /* Text color for the active link */
+}
