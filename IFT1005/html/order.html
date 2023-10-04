@@ -5,12 +5,48 @@
   <title>OnlineShop - Commande</title>
 </head>
 <body>
-<!-- TODO -->
-</body>
+
+<!-- LOGO SHOP + PAGE TITLE -->
+<header>
+  <h1>
+  <img src="/IFT1005/assets/img/logo.svg" alt="Logo de OnlineShop" style="float:left;width:150px;height:50px;">
+  Commande </h1>
+  <table border="border">
+    <th>
+      <nav>
+        <a href="index.html">Accueil</a>
+        <a href="products.html">Produits</a>
+        <a href="contact.html">Contact</a>
+        <a href="shopping-cart.html">Panier</a> 
+      </nav>    
+    </th>
+  </table>
+  <hr size="6" width="90%" align="left" color="bleue">    
+</header>
+<p>
+    <h1>Contact</h1>
+    <label for="firstname">Prénom:</label>
+    <input type="text" name="Prenom" id="firstname" value="required"><br>
+    <label for="lastname">Nom:</label>
+    <input type="text" name="Nom" id="lastname" value="required"><br>
+    <label for="email">Adresse de courriel:</label>
+    <input type="email" name="Address Courriel" id="email" value="required"><br>
+    <label for="phone">Numéro de téléphone:</label>
+    <input type="tel" name="Numero de telephone" id="phone" value="required"><br>
+</p>
+<p>
+    <h1>Paiement</h1>
+    <label for="creditcard">Numéro de carte de crédit:</label>
+    <input type="text" name="No Carte de Credit" id="creditcard" value="required" maxlength="16"><br>
+    <label for="creditcardexpiry">Date d'expiration:</label>
+    <input type="text" name="Date d'expiration" id="creditcardexpiry" value="required" maxlength="4" size="4">
+</p>
+<form action="confirmation.html">
+<input type="submit" value="Payer">
 
 <footer>
   IFT11005 - Travail Pratique 1
-  Équipe : Nahomy Durand (20201414) & Ngomba Erikha (20231036)
+  Équipe : Nahomy Durand (20201414) & Erikha Kayembe Ngomba (20231036)
   </footer>
-  
+</body>
 </html>
