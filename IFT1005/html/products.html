@@ -9,8 +9,12 @@
 <!-- SHOP LOGO + PAGE TITLE-->
 <header>
   <h1>
-    <img src="/IFT1005/assets/img/logo.svg" alt="Logo de OnlineShop" style="float:left;width:150px;height:50px;">
-    Catalogue de produits </h1>
+  <img src="/assets/img/logo.svg" alt="Logo de OnlineShop" style="float:left;width:150px;height:50px;">
+  Catalogue de produits </h1>
+</header>
+
+<!-- NAVIGATION BAR -->
+<nav>
   <table border="border">
     <th>
       <nav>
@@ -22,52 +26,62 @@
     </th>
   </table>
   <hr size="6" width="90%" align="left" color="bleue">    
-</header>
+</nav>
 
 <main>
- <p>Catégories</p>
-    <div>
+<!-- BARRE LATÉRALE -->
+<div class="btn-group" id="productCategories">
+ <h3>Catégories</h3>
       <button>Appareil Photo</button>
       <button>Consoles</button>
       <button>Ecrans</button>
       <button>Ordinateurs</button>
       <button selected>Tous les produits</button>
-    </div>
+  <!-- FILTERS -->
+  <section>
+    <h4>Classement</h4>
+    <button selected>Prix (bas-haut)</button>
+    <button>Prix (haut-bas)</button>
+    <button>Nom (A-Z)</button>
+    <button>Nom (Z-A)</button>
+  </section>
+  </div>
+
+<!-- PRODUCTS DIPLAY -->
+  <section id="productDiplay">
   <h3>Produits</h3>
   <h4>6 produits</h4>
   <table border="border">
     <tr>
       <nav>
-        <thead>
-          <td><a href="product.html">Canon EOS 5D Mark II</a><img src="assets/img/camera-1.png" alt="img" width="250" height="250">2999.99</td>
-          <td><a href="product.html">Console PS3</a><img src="assets/img/ps3.png" alt="img" width="250" height="250">349.99</td>
-          <td><a href="product.html">Téléviseur 50\"</a><img src="assets/img/tv.png" alt="img" width="250" height="250">899.99</td>
+        <thead align="center">
+          <td><a href="product.html">Canon EOS 5D Mark II</a> 
+              <br><img src="/assets/img/camera-1.png" alt="img" width="250" height="250"> <br>2999.99$</td>
+          <td><a href="product.html">Console PS3</a>
+            <br> <img src="/assets/img/ps3.png" alt="img" width="250" height="250"><br>349.99$</td>
+          <td><a href="product.html">Téléviseur 50"</a>
+            <br><img src="/assets/img/tv.png" alt="img" width="250" height="250"><br>899.99$</td>
         </thead>
-        <tbody>
-          <td><a href="product.html">Portable</a><img src="assets/img/laptop-1.png" alt="img" width="250" height="250">699.99</td>
-          <td><a href="product.html">Apple TV</a><img src="assets/img/apple-tv.png" alt="img" width="250" height="250">249.99</td>
-          <td><a href="product.html">iMac 27\"</a><img src="assets/img/mac.png" alt="img" width="250" height="250">2299.99</td>
+        <tbody align="center">
+          <td><a href="product.html">Portable</a>
+            <br> <img src="/assets/img/laptop-1.png" alt="img" width="250" height="250"><br>699.99$</td>
+          <td><a href="product.html">Apple TV</a>
+            <br> <img src="/assets/img/apple-tv.png" alt="img" width="250" height="250"><br>249.99$</td>
+          <td><a href="product.html">iMac 27"</a>
+            <br> <img src="/assets/img/mac.png" alt="img" width="250" height="250"><br>2299.99$</td>
         </tbody>
       </nav>
     </tr>
   </table>
- <p>Classement</p>
+  </section>
 
- <div>
-  <div>
-  <button selected>Prix (bas-haut)</button>
-  <button>Prix (haut-bas)</button>
-  <button>Nom (A-Z)</button>
-  <button>Nom (Z-A)</button>
-  </div>
 
- </div>
 </main>
 
-<footer>
-IFT11005 - Travail Pratique 1
-Équipe : Nahomy Durand (20201414) & Erikha Kayembe Ngomba (20231036)
-</footer>
+<footer align="center"> <font size="-1"> <br> <br>
+  IFT11005 - Travail Pratique 1
+  Équipe : Nahomy Durand (20201414) & Ngomba Erikha (20231036)
+</font> </footer>
 
 </body>
 </html>

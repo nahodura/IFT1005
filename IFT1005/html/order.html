@@ -9,8 +9,12 @@
 <!-- LOGO SHOP + PAGE TITLE -->
 <header>
   <h1>
-  <img src="/IFT1005/assets/img/logo.svg" alt="Logo de OnlineShop" style="float:left;width:150px;height:50px;">
+  <img src="/assets/img/logo.svg" alt="Logo de OnlineShop" style="float:left;width:150px;height:50px;">
   Commande </h1>
+</header>
+
+<!-- NAVIGATION BAR -->
+<nav>
   <table border="border">
     <th>
       <nav>
@@ -22,31 +26,45 @@
     </th>
   </table>
   <hr size="6" width="90%" align="left" color="bleue">    
-</header>
-<p>
+</nav>
+
+<!-- RETURN TO SHOPPING CART-->
+<button type="reset" value="Annuler"> <a href="shopping-cart.html">Retourner au panier d'achat</a></button>
+
+<!-- INFORMATION FORM FOR USER TO FILL OUT -->
+<main>
+<section id="contactInformation">
     <h1>Contact</h1>
-    <label for="firstname">Prénom:</label>
-    <input type="text" name="Prenom" id="firstname" value="required"><br>
-    <label for="lastname">Nom:</label>
-    <input type="text" name="Nom" id="lastname" value="required"><br>
-    <label for="email">Adresse de courriel:</label>
-    <input type="email" name="Address Courriel" id="email" value="required"><br>
-    <label for="phone">Numéro de téléphone:</label>
-    <input type="tel" name="Numero de telephone" id="phone" value="required"><br>
-</p>
-<p>
-    <h1>Paiement</h1>
-    <label for="creditcard">Numéro de carte de crédit:</label>
-    <input type="text" name="No Carte de Credit" id="creditcard" value="required" maxlength="16"><br>
-    <label for="creditcardexpiry">Date d'expiration:</label>
-    <input type="text" name="Date d'expiration" id="creditcardexpiry" value="required" maxlength="4" size="4">
-</p>
+    <label for="firstname">* Prénom:</label>
+    <input type="text" name="Prenom" id="firstname"><br>
+    <label for="lastname">* Nom:</label>
+    <input type="text" name="Nom" id="lastname"><br>
+    <label for="email">* Adresse de courriel:</label>
+    <input type="email" name="Address Courriel" id="email"><br>
+    <label for="phone">* Numéro de téléphone:</label>
+    <input type="tel" name="Numero de telephone" id="phone"><br>
+</section>
+
+<section id="Paiement"></section>
+    <h2>Paiement</h2>
+    <label for="creditcard">* Numéro de carte de crédit:</label>
+    <input type="text" name="No Carte de Credit" id="creditcard" maxlength="16"><br>
+    <label for="creditcardexpiry">* Date d'expiration (MMYY):</label>
+    <input type="text" name="Date d'expiration" id="creditcardexpiry" maxlength="4" size="4">
+</section>
+
+<!-- BUTTONS -->
 <form action="confirmation.html">
 <input type="submit" value="Payer">
 
-<footer>
+<!-- Note for the user-->
+<p><font size="-1"> À noter que les champs précédés d'un * sont obligatoires.</p> </font>
+</main>
+
+
+<footer align="center"> <font size="-1"> <br> <br>
   IFT11005 - Travail Pratique 1
-  Équipe : Nahomy Durand (20201414) & Erikha Kayembe Ngomba (20231036)
-  </footer>
+  Équipe : Nahomy Durand (20201414) & Ngomba Erikha (20231036)
+</font> </footer>
 </body>
 </html>
