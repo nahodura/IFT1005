@@ -8,25 +8,28 @@
 <body>
 
 <!-- SHOP LOGO + PAGE TITLE-->
+<header>
 <h1>
   <img src="/IFT1005/assets/img/logo.svg" alt="Logo de OnlineShop" style="float:left;width:150px;height:50px;">
    <br>
 </h1>
+</header>
 
 <!-- NAVIGATION BAR -->
-  <nav>
-    <a href="index.html">Accueil</a>
-    <a href="contact.html">Contact</a>
-    <a href="products.html">Produits</a>
-    <a href="shopping-cart.html">Panier</a>
-  </nav>
+<nav>
+  <a href="index.html">Accueil</a>
+  <a href="contact.html">Contact</a>
+  <a href="products.html">Produits</a>
+  <a href="shopping-cart.html">Panier</a>
+</nav>
 
 <!-- PRODUCT DESCRIPTION -->
-<div class="descritionProduit">
+<main>
   <center>
   <h1>Apple TV 4K (32GB)</h1>
   <img src="/IFT1005/assets/img/apple-tv.png" alt="Apple TV">
 
+  <article class="description">
     <!-- Description du produit provenant directement du site d'Apple : www.apple.com/ca/fr/apple-tv-4k -->
     <p> Propulsée par la fulgurante puce A15 Bionic, Apple TV 4K réunit vos services Apple
       et vos apps de diffusion en continu avec une qualité de son et d'image sans précédent.
@@ -34,7 +37,9 @@
       grand écran de la maison. Et prenez les commandes de vos appareils et accessoires 
       connectés en toute fluidité. C'est tout ce que vous aimez d'Apple. En version cinéma. </p>
     </center>
+  </article>
 
+  <article class="caracteristics">
     <ul>
     <li> <strong> Télé en direct :</strong> Avec Apple TV 4K, vous avez tout ce qu’il faut pour
       écouter en direct les plus grands réseaux, diffuseurs et chaînes spécialisées. Regardez du 
@@ -47,23 +52,30 @@
         de détails grâce aux formats HDR avancés comme Dolby Vision et HDR10+8. Tout ce que vous 
         regardez est donc digne de votre grand écran.</li>
     </ul>
+  </article>
 
 <center>
+  <section id="price"
   <p>Prix : 179,00$</p>
   <p style="color: grey;"> <font size="-1"> Taxes non-incluses </font> </p>
+</section>
 
   <!-- INTERACTIVE INPUT -->
+  <section id="input">
   <form>
       <label for="quantity">Quantité :</label>
       <input type="number" id="inputQuantity" name="quantity" value="1" min="1" required>
       <button type="submit" class="ajouter">Ajouter au Panier</button>
   </form>
 </center>
-</div>
+</section>
+</main>
 
 <footer>
-  <!-- to do -->
-</footer>
+  IFT11005 - Travail Pratique 1
+  Équipe : Nahomy Durand (20201414) & Ngomba Erikha (20231036)
+  </footer>
+  
 </body>
 </html>
 
