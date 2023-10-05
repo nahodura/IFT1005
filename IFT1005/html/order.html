@@ -42,9 +42,10 @@
       <label for="lastname">* Nom:</label>
       <input type="text" name="Nom" id="lastname" required><br>
       <label for="email">* Adresse de courriel:</label>
-      <input type="email" name="Address Courriel" id="email" placeholder="abc@email.com"><br>
+      <input type="email" name="Address Courriel" id="email" placeholder="abc@email.com" 
+      pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"><br>
       <label for="phone">* Numéro de téléphone:</label>
-      <input type="tel" name="Numero de telephone" id="phone" placeholder="(123) 456-7890" required><br>
+      <input type="tel" name="Numero de telephone" id="phone" placeholder="(123) 456-7890" pattern="\d{10}" required><br>
   </section>
   <!-- Payment Information-->
   <section id="payment"></section>
