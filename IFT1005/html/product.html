@@ -1,3 +1,5 @@
+<!-- Nahomy Durand (20201414) & Erikha Ngomba (20231036) -->
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -16,22 +18,20 @@
 
 <!-- NAVIGATION BAR -->
 <nav>
-  <table border="border">
-    <th>
-      <nav>
+  <table border="1">
+    <tr><th>
         <a href="index.html">Accueil</a>
         <a href="products.html">Produits</a>
         <a href="contact.html">Contact</a>
         <a href="shopping-cart.html">Panier</a>   
-     </th>
-    </nav>  
+     </th></tr> 
   </table>
-  <hr size="6" width="90%" align="left" color="bleue">    
+  <hr size="6" width="100%" align="center" color="#000000">    
 </nav>
 
 <!-- PRODUCT DESCRIPTION -->
+<center> 
 <main>
-  <center>
   <h1>Apple TV</h1>
   <img src="/IFT1005/assets/img/apple-tv.png" alt="Apple TV">
 
@@ -43,7 +43,6 @@
       réseau sans fil ou Ethernet, avec un appareil iOS ou avec un ordinateur (sous Mac OS X ou sous Windows)
       par le biais du logiciel iTunes, permettant ainsi de diffuser le contenu vidéo et audio sur le téléviseur,
       via éventuellement un amplificateur audio-vidéo. </p>
-    </center>
   </article>
 
   <section class="caracteristics">
@@ -56,27 +55,25 @@
     </ul>
   </section>
 
-<center>
   <section id="price">
   <p>Prix : 249.99$</p>
   <p style="color: grey;"> <font size="-1"> Taxes non-incluses </font> </p>
 </section>
 
   <!-- INTERACTIVE INPUT -->
-  <form id="addToCart">
-      <label for="quantity">Quantité :</label>
+  <form id="addToCart" action="shopping-cart.html">
+      <label for="quantity"> Quantité :</label>
       <input type="number" id="inputQuantity" name="quantity" value="1" min="1" required>
-      <button type="submit" class="ajouter"><a href=shopping-cart.html> Ajouter au Panier</a> </button>
+      <button type="submit" class="ajouter"> Ajouter au Panier </button>
   </form>
-</center>
+
 </main>
 
-<footer align="center"> <font size="-1"> <br> <br>
+<footer> <font size="-1"> <br> <br>
   IFT1005 - Travail Pratique 1
-  <br> Équipe : Nahomy Durand (20201414) & Ngomba Erikha (20231036)
+  <br> Équipe : Nahomy Durand (20201414) & Erikha Ngomba (20231036)
 </font> </footer>
-
-</body>
+</center>
 </html>
 
 </body>

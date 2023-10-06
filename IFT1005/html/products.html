@@ -1,3 +1,5 @@
+<!-- Nahomy Durand (20201414) & Erikha Ngomba (20231036) -->
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -15,20 +17,17 @@
 
 <!-- NAVIGATION BAR -->
 <nav>
-  <table border="border">
-    <th>
-      <nav>
+  <table border="1">
+    <tr><th>
         <a href="index.html">Accueil</a>
         <a href="products.html">Produits</a>
         <a href="contact.html">Contact</a>
         <a href="shopping-cart.html">Panier</a>   
-     </th>
-    </nav>  
+     </th></tr> 
   </table>
-  <hr size="6" width="90%" align="left" color="bleue">    
+  <hr size="6" width="100%" align="center" color="#000000">    
 </nav>
 
-<main>
 <!-- BARRE LATÉRALE -->
 <div class="btn-group">
 
@@ -39,54 +38,50 @@
         <button>Consoles</button>
         <button>Ecrans</button>
         <button>Ordinateurs</button>
-        <button selected>Tous les produits</button>
+        <button value="active">Tous les produits</button>
     </section>
     
     <!-- Filter -->
     <section id="productcriteria">
       <h3>Classement</h3>
-      <button selected>Prix (bas-haut)</button>
+      <button value="active">Prix (bas-haut)</button>
       <button>Prix (haut-bas)</button>
       <button>Nom (A-Z)</button>
       <button>Nom (Z-A)</button>
     </section>
-  </div>
+</div>
 
 <!-- PRODUCTS DIPLAY -->
-  <section id="productDiplay">
+<center> 
+<main class="panneauPrincipal">
   <h2>Produits</h2>
   <h4>6 produits</h4>
-  <table border="border">
-    <tr>
-      <nav>
-        <thead align="center">
-          <td><a href="product.html">Canon EOS 5D Mark II
-              <br><img src="/IFT1005/assets/img/camera-1.png" alt="img" width="250" height="250"> <br>2999.99$</a> </td>
-          <td><a href="product.html">Console PS3
-            <br><img src="/IFT1005/assets/img/ps3.png" alt="img" width="250" height="250"><br>349.99$</a> </td>
-          <td><a href="product.html">Téléviseur 50"
-            <br><img src="/IFT1005/assets/img/tv.png" alt="img" width="250" height="250"><br>899.99$</a> </td>
-        </thead>
-        <tbody align="center">
-          <td><a href="product.html">Portable
-            <br> <img src="/IFT1005/assets/img/laptop-1.png" alt="img" width="250" height="250"><br>699.99$</a> </td>
-          <td><a href="product.html">Apple TV
-            <br> <img src="/IFT1005/assets/img/apple-tv.png" alt="img" width="250" height="250"><br>249.99$</a> </td>
-          <td><a href="product.html">iMac 27"
-            <br> <img src="/IFT1005/assets/img/mac.png" alt="img" width="250" height="250"><br>2299.99$</a> </td>
-        </tbody>
-      </nav>
+  <table id="productslist" border="2">
+      <tr align="center">
+        <!-- En ce moment, par les demandes du TP1, tous les produits ci-dessous mènent à la même page de product.html -->
+        <td><a href="product.html">Canon EOS 5D Mark II
+            <br><img src="/IFT1005/assets/img/camera-1.png" alt="img" width="250" height="250"> <br>2999.99$</a> </td>
+        <td><a href="product.html">Console PS3
+          <br><img src="/IFT1005/assets/img/ps3.png" alt="img" width="250" height="250"><br>349.99$</a> </td>
+        <td><a href="product.html">Téléviseur 50"
+          <br><img src="/IFT1005/assets/img/tv.png" alt="img" width="250" height="250"><br>899.99$</a> </td>
+    </tr>
+      <tr align="center">
+        <td><a href="product.html">Portable
+          <br> <img src="/IFT1005/assets/img/laptop-1.png" alt="img" width="250" height="250"><br>699.99$</a> </td>
+        <td><a href="product.html">Apple TV
+          <br> <img src="/IFT1005/assets/img/apple-tv.png" alt="img" width="250" height="250"><br>249.99$</a> </td>
+        <td><a href="product.html">iMac 27"
+          <br> <img src="/IFT1005/assets/img/mac.png" alt="img" width="250" height="250"><br>2299.99$</a> </td>
     </tr>
   </table>
-  </section>
-
-
 </main>
 
-<footer align="center"> <font size="-1"> <br> <br>
+<footer> <font size="-1"> <br> <br>
   IFT1005 - Travail Pratique 1
-  <br> Équipe : Nahomy Durand (20201414) & Ngomba Erikha (20231036)
+  <br> Équipe : Nahomy Durand (20201414) & Erikha Ngomba (20231036)
 </font> </footer>
+</center>
 
 </body>
 </html>
