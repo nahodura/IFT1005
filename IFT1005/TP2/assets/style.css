@@ -1,0 +1,236 @@
+/**
+IFT1005 - Dvlp. web - DEVOIR2
+Auteur : @Nahomy Durand (20201414)
+Remise le 5 novembre 2023
+*/
+
+/* POLICE & COULEUR DE TEXTE PAR DÉFAULT */
+body {
+    font-family: Arial, sans-serif;
+    color: black;
+}
+
+/* PAR DÉFAUT */
+main {
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+}
+
+/* ENTÊTE */
+header {
+    background-color: #14597f;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom: 1px solid #0b2d3d;
+    box-sizing: border-box;
+    height: 60px;
+}
+
+    header .content {
+    max-width: 1200px;
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    }
+
+    /* LOGO */
+    header img {
+    align-self: flex-start;
+    height: 50px;
+    vertical-align: -40px
+    }
+
+    /* NAVIGUATION IN THE HEADER */
+        header nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        }
+
+        header nav ul {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+        }
+        
+        header nav li a{ 
+        text-decoration: none;
+        align-self: flex-end;
+        color: white;
+        padding: 9px 4px;
+        margin-right: 7px;
+        vertical-align: -10px;
+        }
+
+        /* ACTIVE PAGE */
+        .active {
+            background-color: #1fb5e9 ;
+            border-radius: 4px;
+        }
+
+        .shopping-cart {
+            position: relative;
+        }
+
+        .fa-shopping-cart {
+            color: #14597f;
+        }
+
+        /* Diplay number of items in cart (red bubble) */
+        .count{
+            color: white;
+            font-size: small;
+            background-color: #d9534f;
+            border-radius: 50%;
+            padding: 0.3em;
+            position: absolute;
+            bottom: 0; 
+            right: 0; 
+            transform: translate(30%, 40%); 
+            line-height: 1;
+            min-width: 1em;
+            text-align: center;
+        }
+
+/* ACCUEIL */
+main img{
+    float: right;
+    width: 50%;
+    margin: 0;
+}
+
+.btn {
+    background-color: #14597f;
+    border: 1px solid #0b2d3d;
+    border-radius: 4px;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.2s ease-out;
+}
+
+.btn:hover {
+    background-color: #1fb5e9;
+    text-decoration: none;
+} 
+
+/* PAGE DES PRODUITS */
+main .products {
+    display: flex;
+}
+
+/* BARRE LATÉRALE */
+.sidebar{
+    width: 25%;
+    padding-right: 10px;
+    box-sizing: border-box;
+    padding-right: 30px;
+}
+    .sidebar button {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: left;
+        width: 100%;
+        color: black;
+        border-radius: 4px;
+        padding: 10px 20px;
+        background-color: white;
+        border: 1px solid #999999;
+    }
+
+    .sidebar button:hover {
+        background-color: #f3f3f3;
+        color: black;
+        transition: background-color 0.2s ease-out;
+    }
+
+    .sidebar button .selected {
+        background-color: #ddf2fb;
+    }
+
+/* PANNEAU PRINCIPAL */
+#products-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 75%;
+    align-items: start;
+}
+
+#products-list a {
+    border: 1px solid #999999; 
+    border-radius: 4px; 
+    display: block; 
+    padding: 15px; 
+    background-color: #fff; 
+    text-decoration: none;
+    color: inherit; 
+    height: 100%;
+  }
+
+#products-list a:hover{
+    background-color: #f3f3f3;
+    transition: background-color 0.2s ease-out;
+}
+
+  #products-list h2 {
+    margin: 0 0 5px 0;
+  }
+
+  #products-list img {
+    max-width: 100%;
+    align-self: center;
+    margin-bottom: 10px;
+  }
+
+  #products-list p {
+    vertical-align: bottom;
+    text-align: right; 
+    margin: 10px 0 0 0;
+  }
+
+
+#numberOfProducts {
+    font-size: small;
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+/* PAGE DE CONTACT */
+
+.contactColumns {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    border: 1px solid #999999;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+.contactColumn {
+    width: 33.33%;
+    padding: 20px;
+    text-align: center; 
+}
+
+/* FOOTER */
+footer {
+    width: 100%;
+    position: sticky;
+    bottom: 0;
+    background-color: #eeeeee;
+    height: 70px;
+    border-top: 1px solid #cccccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
