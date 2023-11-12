@@ -1,0 +1,122 @@
+body, html{
+    font-family: 'Arial', sans-serif;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+
+}
+
+
+/* page d'accueil(index.html) /
+.home-main article{
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.home-main article div{
+    width: 50%;
+}
+.home-main article img{
+    max-width: 1200px;
+    margin: auto;
+    width: 25%;
+    float: right;
+    margin-left: auto;
+}
+
+
+/ Barre de navigation(entête) */
+header a img{
+    height: 60px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #14597f;
+    height: 60px;
+}
+/* Ajoutez cette classe pour styliser le lien vers la liste de produits de la page d'accueil */
+.home-link-btn {
+    background-color: #14597f;
+    border: 1px solid #0b2d3d;
+    border-radius: 4px;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.2s ease-out;
+}
+
+.home-link-btn:hover {
+    background-color: #1fb5e9;
+    text-decoration: none;
+}
+
+/* Utilisez cette classe pour le bouton générique (.btn) que vous réutilisez ailleurs */
+.btn {
+    /* Styles génériques pour le bouton */
+    background-color: #14597f;
+    border: 1px solid #0b2d3d;
+    border-radius: 4px;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.2s ease-out;
+}
+
+.btn:hover {
+    background-color: #1fb5e9;
+    text-decoration: none;
+}
+/* BARRE LATÉRALE */
+.sidebar {
+    width: 25%;
+    box-sizing: border-box; /* Pour inclure la bordure et le padding dans la largeur déclarée */
+    padding-right: 15px; /* Ajoutez l'espacement souhaité à droite de la barre latérale */
+    float: left; /* Assurez-vous que la barre latérale flotte à gauche */
+
+    /* Autres styles pour la barre latérale, si nécessaire */
+}
+
+/* PANNEAU PRINCIPAL */
+#main-content {
+    width: 75%;
+    box-sizing: border-box; /* Pour inclure la bordure et le padding dans la largeur déclarée */
+    padding-left: 15px; /* Ajoutez l'espacement souhaité à gauche du panneau principal */
+    float: left; /* Assurez-vous que le panneau principal flotte à gauche */
+
+    Autres styles pour le panneau principal, si nécessaire */
+}
+
+/* Effacer les flottants pour éviter des problèmes de disposition */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* PANNEAU PRINCIPAL */
+#products-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 75%;
+    align-items: start;
+}
+
+#products-list a {
+    border: 1px solid #999999; 
+    border-radius: 4px; 
+    display: block; 
+    padding: 15px; 
+    background-color: #fff; 
+    text-decoration: none;
+    color: inherit; 
+    height: 100%;
+  }
+
+#products-list a:hover{
+    background-color: #f3f3f3;
+    transition: background-color 0.2s ease-out;
+}
